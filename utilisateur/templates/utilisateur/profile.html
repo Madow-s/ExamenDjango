@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Login here{% endblock %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <h2>Profil de {{ request.user.username }}</h2>
+<p>Rôle : {{ request.user.profile.role }}</p>
+{% if request.user.profile.avatar %}
+<img src="{{ request.user.profile.avatar.url }}" width="100">
+{% endif %}
+<a href="{% url 'edit_profile' %}">Modifier le profil</a>
+<a href="{% url 'logout' %}">Se déconnecter</a>
+
+{% endblock %}
+
