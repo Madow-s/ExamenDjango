@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <!-- Hero Section -->
+    <div class="text-center mb-2">
+        <h1 class="display-4 fw-bold">Gestion de Projets</h1>
+        <p class="lead text-muted mt-2">
+            Organisez vos projets, structurez vos tâches et collaborez efficacement
+            entre étudiants et professeurs.
+        </p>
+
+        {% if user.is_authenticated %}
+            <a href="#" class="btn btn-lg mt-4 shadow">
+                Accéder à mes projets
+            </a>
+        {% else %}
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg mt-3 shadow">
+                Se connecter
+            </a>
+            <a href="{% url 'register' %}" class="btn btn-outline-primary btn-lg mt-3 ms-2">
+                S’inscrire
+            </a>
+        {% endif %}
+    </div>
+
+
+
+
+
+    <!-- Features Section -->
+  <div class="row g-4 mt-2">
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+            <div class="card-body">
+                <div class="mb-1">
+                    <i class="bi bi-kanban fs-1 text-primary"></i>
+                </div>
+                <h5 class="fw-bold">Gestion de Projets</h5>
+                <p class="text-muted">
+                    Créez et structurez vos projets académiques ou pédagogiques
+                    avec une organisation claire et intuitive.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+            <div class="card-body">
+                <div class="mb-1">
+                    <i class="bi bi-kanban fs-1 text-primary"></i>
+                </div>
+                <h5 class="fw-bold">Gestion Avancée</h5>
+                <p class="text-muted">
+                    Planification structurée et suivi global des projets.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+            <div class="card-body">
+                <div class="mb-1">
+                    <i class="bi bi-list-check fs-1 text-success"></i>
+                </div>
+                <h5 class="fw-bold">Suivi des Tâches</h5>
+                <p class="text-muted">
+                    Ajoutez, modifiez et suivez l’évolution des tâches
+                    associées à chaque projet en temps réel.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+            <div class="card-body">
+                <div class="mb-1">
+                    <i class="bi bi-people fs-1 text-danger"></i>
+                </div>
+                <h5 class="fw-bold">Collaboration</h5>
+                <p class="text-muted">
+                    Plateforme adaptée aux étudiants et professeurs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}
