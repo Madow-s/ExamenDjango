@@ -1,0 +1,80 @@
+.note-container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 45px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 20px 40px rgba(122, 0, 60, 0.15);
+    border-top: 6px solid #7a003c;
+  }
+  
+  /* TITRE */
+  .title {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #a00050;
+  }
+  
+  /* DATES */
+  .date-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 30px;
+  }
+  
+  /* BOUTONS */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+  
+  .custom-btn {
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Bouton modifier */
+  .edit-btn {
+    background-color: #7a003c;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #a00050;
+    transform: translateY(-2px);
+  }
+  
+  /* Bouton supprimer */
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b02a37;
+    transform: translateY(-2px);
+  }
+  
+  /* DESCRIPTION */
+  .description {
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 16px;
+    color: #444;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }

@@ -1,0 +1,49 @@
+.custom-form {
+    width: 520px;
+    padding: 40px;
+    border-radius: 18px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #7a003c, #a00050);
+    box-shadow: 0 15px 35px rgba(122, 0, 60, 0.25);
+    color: white;
+  }
+  
+  .form-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .custom-input {
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 192, 203, 0.4);
+    outline: none;
+  }
+  
+  textarea.custom-input {
+    height: auto;
+  }
+  
+  .custom-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    background-color: white;
+    color: #7a003c;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #ffe6f0;
+    transform: translateY(-2px);
+  }
